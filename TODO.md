@@ -1,0 +1,5 @@
+- [ ] Parametrage partie  
+    - [ ] Nombre undercover 
+    - [ ] Mister white
+- [ ] Remove nuxt-socket-io
+- [ ] Vuex array remove order
