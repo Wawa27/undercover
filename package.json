@@ -22,11 +22,11 @@
     "socket.io-client": "^2.3.0",
     "vue": "^2.6.12",
     "vue-socket.io": "^3.0.10",
-    "vue-socket.io-extended": "^4.0.4"
+    "vue-socket.io-extended": "^4.0.4",
+    "@nuxtjs/tailwindcss": "^1.0.0"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.4",
-    "@nuxtjs/tailwindcss": "^1.0.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
     "nodemon": "^1.18.9",
