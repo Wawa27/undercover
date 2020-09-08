@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col items-center text-white truncate" :class="username ? 'zoom-in' : ''">
-      <div v-if="username" class="text-5xl font-semibold" :class="[
+      <div v-if="username !== undefined" class="text-5xl font-semibold" :class="[
       isPlayer ? 'text-gray-600' : 'text-white',
       isUndercover ? 'text-red-600' : 'text-white',
       isMisterWhite ? 'text-teal-600' : 'text-white'

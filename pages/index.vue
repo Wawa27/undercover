@@ -170,6 +170,7 @@ export default {
       this.$store.commit('room/startRound');
       this.$router.push({ path: '/result' });
     });
+    this.$store.commit('settings/setRoomBaseURL', window.location.origin);
   },
   computed: {
     username: {
