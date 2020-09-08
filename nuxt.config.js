@@ -48,7 +48,7 @@ module.exports = {
   io: {
     sockets: [{
       name: 'main',
-        url: process.env.SOCKET_SERVER_HOST + ':' + process.env.SOCKET_SERVER_PORT
+        url: process.env.SOCKET_HOST + ':' + process.env.SOCKET_PORT
     }]
   },
   /*

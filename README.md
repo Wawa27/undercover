@@ -1,5 +1,18 @@
 # Undercover
 
+## Requirements
+
+### Environment variables
+
+````
+HOST
+PORT
+BASE_URL
+
+SOCKET_HOST
+SOCKET_PORT
+````
+
 ## Build Setup
 
 ```bash
