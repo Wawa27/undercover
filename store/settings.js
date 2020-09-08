@@ -4,7 +4,7 @@ export const state = () => ({
   wordPerRoundCount: undefined,
   roundPerGameCount: undefined,
   roomID: undefined,
-  roomBaseURL: process.env.WEB_SERVER_HOST + ':' + process.env.WEB_SERVER_PORT,
+  roomBaseURL: process.env.BASE_URL,
   version: process.env.version
 });
 
