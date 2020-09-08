@@ -3,7 +3,7 @@ module.exports = {
   telemetry: false,
   server: {
     host: process.env.WEB_SERVER_HOST,
-    port: process.env.WEB_SERVER_PORT
+    port: process.env.PORT
   },
   env: {
     version: 'v' + process.env.npm_package_version
