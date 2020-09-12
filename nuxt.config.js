@@ -2,7 +2,7 @@ module.exports = {
   mode: 'universal',
   telemetry: false,
   server: {
-    host: process.env.HOST,
+    host: process.env.HOST || "0.0.0.0",
     port: process.env.PORT
   },
   env: {
