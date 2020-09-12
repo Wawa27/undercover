@@ -24,6 +24,7 @@
         <div v-if="misterWhite" class="text-4xl text-white font-bold">
           Misterwhite :
           <span class="text-red-600">{{ misterWhite.username }}</span>
+          ({{guessWord}})
         </div>
 
         <div class="flex pt-8 space-x-16">
@@ -114,6 +115,11 @@ export default {
     misterWhite: {
       get () {
         return this.$store.getters['room/getPlayers'][this.$store.getters['room/getMisterWhite']];
+      }
+    },
+    guessWord: {
+      get () {
+        return this.$store.getters['room/getGuessWord'];
       }
     }
   },

@@ -2,7 +2,7 @@
   "name": "undercover2",
   "version": "1.0.0",
   "description": "My cat&#39;s meow Nuxt.js project",
-  "author": "My Name",
+  "author": "Wawa#2003",
   "private": true,
   "scripts": {
     "dev": "nodemon server/index.js --watch server",
@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
-    "cross-env": "^5.2.0",
     "dotenv": "^8.2.0",
     "express": "^4.16.4",
     "mongodb": "^3.6.0",

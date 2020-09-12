@@ -1,5 +1,2 @@
-- [ ] Parametrage partie  
-    - [ ] Nombre undercover 
-    - [ ] Mister white
-- [ ] Remove nuxt-socket-io
-- [ ] Vuex array remove order
+- [ ] See undercover guess word
+- [ ] Should not start with mister white

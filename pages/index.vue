@@ -144,6 +144,7 @@ export default {
           'setPlayerTurn --> room/setPlayerTurn',
           'setHasConfirmedGuess --> room/setHasConfirmedGuess',
           'setGuess --> room/setGuess',
+          'setGuessWord --> room/setGuessWord',
           'addHint --> room/addHint',
           'startGuessWord --> room/startGuessWord',
           'onDisconnect --> room/onDisconnect',

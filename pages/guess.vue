@@ -21,20 +21,25 @@
                          :src="getAvatar(guesser.playerIndex)" alt="avatar">
                   </div>
                 </div>
-
-                <button v-if="target.playerIndex !== playerIndex && currentGuess !== target.playerIndex && !validated"
-                        class="bg-pink-600 mt-4 px-8 py-2 rounded-lg font-semibold h-10 w-48"
-                        @click="setGuess(target.playerIndex)">
-                  Undercover?
-                </button>
-
-                <button
-                  v-if="target.playerIndex !== playerIndex && currentMisterWhiteGuess !== target.playerIndex && !validated && misterWhite"
-                  class="bg-gray-800 mt-4 px-8 py-2 rounded-lg font-semibold h-10 w-48"
-                  @click="setMisterWhiteGuess(target.playerIndex)">
-                  Mister White?
-                </button>
               </div>
+
+              <button v-if="target.playerIndex !== playerIndex && currentGuess !== target.playerIndex && !validated"
+                      class="bg-pink-600 mt-4 px-8 py-2 rounded-lg font-semibold h-10 w-48"
+                      @click="setGuess(target.playerIndex)">
+                Undercover?
+              </button>
+              <div v-else-if="currentGuess === target.playerIndex && !validated"
+                   class="bg-pink-600 mt-4 rounded-lg font-semibold h-10 w-10"/>
+              <div v-else class="h-10 w-48"/>
+
+              <button
+                v-if="target.playerIndex !== playerIndex && currentMisterWhiteGuess !== target.playerIndex && !validated && misterWhite"
+                class="bg-gray-800 mt-4 px-8 py-2 rounded-lg font-semibold h-10 w-48"
+                @click="setMisterWhiteGuess(target.playerIndex)">
+                Mister White?
+              </button>
+              <div v-else-if="currentMisterWhiteGuess === target.playerIndex && !validated"
+                   class="bg-gray-800 mt-4 rounded-lg font-semibold h-10 w-10"/>
             </div>
           </div>
         </div>

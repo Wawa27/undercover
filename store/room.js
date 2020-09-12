@@ -28,9 +28,7 @@ export const getters = {
   getMisterWhite: state => state.misterWhite,
   startGuessWord: state => state.startGuessWord,
   getGuessWord: state => state.guessWord,
-  isPlayerTurn (state) {
-    return state.playerTurn === state.playerIndex;
-  },
+  isPlayerTurn: state => index => state.playerTurn === (index !== undefined ? index : state.playerIndex),
   getScore (state) {
     return state.players[state.playerIndex].score;
   },
